@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+    nexus:
+        build: .
+        image: sonatype/nexus3:latest
+        ports:
+            - "58889:58889"
+        container_name: nexus
+
